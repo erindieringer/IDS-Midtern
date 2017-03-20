@@ -74,7 +74,8 @@
 		<b>If not, what is missing and what concerns does it raise?
 		What is your evidence for this?</b>
 		<p>This data is not complete becuase there is a lack of data for 2016. While doing our analysis of crime by season we found that there was no information 
-		for Summer and Fall in 2016. </p>
+		for Summer and Fall in 2016. The table below shows part of our aggregated csv for violent compared to non-violent crimes by season (see full table
+		<a href="https://s3-us-west-2.amazonaws.com/hexingren/Projects/Data+Pipeline/mid/CrimesByYearSeasonViolence.xlsx">here</a>): </p>
 		<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
 		<script>
@@ -98,6 +99,45 @@
 		        }
 		    });
 		</script-->
+		<table class="table">
+		  <thead>
+		    <tr>
+		      <th>Year</th>
+		      <th>Season</th>
+		      <th>Violent</th>
+		      <th>Non-Violent</th>
+		      <th></th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>2016</td>
+		      <td>Spring</td>
+		      <td>7361</td>
+		      <td>14747</td>
+		    </tr>
+		    <tr>
+		      <td> </td>
+		      <td>Summer</td>
+		      <td><b>0</b></td>
+		      <td><b>0</b></td>
+		      <td>**Missing Data</td>
+		    </tr>
+		    <tr>
+		      <td> </td>
+		      <td>Fall</td>
+		      <td><b>0</b></td>
+		      <td><b>0</b></td>
+		      <td>**Missing Data</td>
+		    </tr>
+		    <tr>
+		      <td> </td>
+		      <td>Winter</td>
+		      <td>247</td>
+		      <td>685</td>
+		    </tr>
+		  </tbody>
+		</table>
      </div>
       
      <div class="page-header">
