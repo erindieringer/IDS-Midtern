@@ -73,35 +73,25 @@
 		<b>If not, what is missing and what concerns does it raise?
 		What is your evidence for this?</b>
 		<p>This data is not complete becuase there is a lack of data for 2014-2016. While doing our analysis of crime by season we found that there was no information 
-		for Summer and Fall in 2016 and a large amoung of missing data for Fall 2014 as well and Summer and Fall 2015. The graph below that is aggregated by season per year visibly shows the missing data in our set. 
+		for Summer and Fall in 2016 and a large amoung of missing data for Fall 2014 as well and Summer and Fall 2015. The first graph below shows the decrease in number 
+		of crimes from 2012-2016, while the second graph below that is aggregated by season per year visibly shows where the missing data is in our set for certain time periods. 
 		This lack of data causes the overall number of crimes to appear to decrease from 2012-2016 drastically, but further investigation showed that there was simply
 		a lack of data in the set for these times.</p>
-		<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
-		<script>
-		    function arrayToTable(tableData) {
-		        var table = $('<table></table>');
-		        $(tableData).each(function (i, rowData) {
-		            var row = $('<tr></tr>');
-		            $(rowData).each(function (j, cellData) {
-		                row.append($('<td>'+cellData+'</td>'));
-		            });
-		            table.append(row);
-		        });
-		        return table;
-		    }
-		
-		    $.ajax({
-		        type: "GET",
-		        url: "https://s3-us-west-2.amazonaws.com/hexingren/Projects/Data+Pipeline/mid/CrimesByYearSeasonViolence.xlsx",
-		        success: function (data) {
-		            $('body').append(arrayToTable(Papa.parse(data).data));
-		        }
-		    });
-		</script-->
 		<br>
-		<iframe width="1200" height="700" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=B5FAFF90B7101A41&resid=B5FAFF90B7101A41%21134&authkey=AGyfXT5u3G9hlGI&em=2&Item=Chart%203&wdDownloadButton=True"></iframe>
-		<iframe width="1200" height="700" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=B5FAFF90B7101A41&resid=B5FAFF90B7101A41%21122&authkey=AOLEf4m9SJZHwjs&em=2&Item=Chart%201&wdDownloadButton=True"></iframe>
+		<div class="row">
+		    <div class="col-md-1"></div>
+				<!-- CCbyYearOriginal -->
+				<div class="col-md-10"><iframe width="1000" height="600" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1QTas06zTgIEc687N1LSkS-zDkMcPVizBjRWSPERRJ54/pubchart?oid=625925499&amp;format=interactive"></iframe></div>
+				<div class="col-md-1"></div>
+		 </div> <!-- /row -->
+		 <div class="row">
+		    <div class="col-md-1"></div>
+				<!-- CCbyYearSeasonViolence -->
+				<div class="col-md-10"><iframe width="975" height="479" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=B5FAFF90B7101A41&resid=B5FAFF90B7101A41%21138&authkey=ABh843HmuD3nOgE&em=2&Item=Chart%203&wdDownloadButton=True"></iframe></div>
+		    <div class="col-md-1"></div>
+		 </div> <!-- /row -->
+		<br>
+		
 	
      </div>
       
